@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include "TodosOsMenus_subprograma.h"
+
+int main()
+{
+    setlocale(LC_CTYPE, "Portuguese");
+    printf("*----------------------------------------------------------*\n");
+    printf("====PROGRAMA DE APOIO À GESTÃO DE UMA CLÍNICA GERIÁTRICA====\n");
+    printf("*----------------------------------------------------------*");
+    puts("\n\n");
+    menu_principal();
+
+    return 0;
+}
