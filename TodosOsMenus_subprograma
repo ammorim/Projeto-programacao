@@ -1,5 +1,6 @@
 void menu_principal(void){
-    int option;
+    int op;
+    printf("====MENU PRINCIPAL====\n");
     printf("*-------------------------------------------*\n");
     printf("|1: Validações numéricas                    |\n");
     printf("|2: Registo Mensal de exercício físico      |\n");
@@ -8,8 +9,9 @@ void menu_principal(void){
     printf("|5: Terminar o programa                     |\n");
     printf("*-------------------------------------------*\n");
     printf("Selecione a opção desejada:");
-    scanf("%d", &option);
-    switch(option){
+    scanf("%d", &op);
+    while(op!=5){
+    switch(op){
         case 1:
             menu_validacoes();
             break;
@@ -22,18 +24,27 @@ void menu_principal(void){
         case 4:
             menu_clinico();
             break;
-        case 5:
-            menu_terminar();
-            break;
         default:
-            system("cls");
+            system("cls");//limpa o ecrã
             printf("Erro! Por favor, introduza uma opção válida...\n");
-            return menu_principal();
+            break;
     }
+    printf("====MENU PRINCIPAL====\n");
+    printf("*-------------------------------------------*\n");
+    printf("|1: Validações numéricas                    |\n");
+    printf("|2: Registo Mensal de exercício físico      |\n");
+    printf("|3: Sopa de letras                          |\n");
+    printf("|4: Registo clínico                         |\n");
+    printf("|5: Terminar o programa                     |\n");
+    printf("*-------------------------------------------*\n");
+    printf("Selecione a opção desejada:");
+    scanf("%d", &op);
+}
+
 }
 
 void menu_validacoes(void){
-    system("cls");
+    system("cls");//limpa o ecrã
     int option_validacoes;
     printf("====VALIDAÇÕES NUMÉRICAS====\n");
     printf("*-------------------------------------*\n");
@@ -45,10 +56,43 @@ void menu_validacoes(void){
     printf("*-------------------------------------*\n");
     printf("Selecione a opção desejada:");
     scanf("%d", &option_validacoes);
+    while(option_validacoes!=5){
+        switch(option_validacoes){
+            case 1:
+                printf("teste");//meter subprog aqui
+                break;
+            case 2:
+                printf("teste");//meter subprog aqui
+                break;
+            case 3:
+                printf("teste");//meter subprog aqui
+                break;
+            case 4:
+                printf("teste");//meter subprog aqui
+                break;
+            default:
+                system("cls");//limpa o ecrã
+                printf("Erro! Por favor, introduza uma opção válida...\n");
+                break;
+        }
+        printf("====VALIDAÇÕES NUMÉRICAS====\n");
+        printf("*-------------------------------------*\n");
+        printf("|1: Número em notação científica      |\n");
+        printf("|2: Número de algarismos de um número |\n");
+        printf("|3: Número = número de telefone móvel?|\n");
+        printf("|4: Número = número fiscal?           |\n");
+        printf("|5: Voltar ao menu anterior           |\n");
+        printf("*-------------------------------------*\n");
+        printf("Selecione a opção desejada:");
+        scanf("%d", &option_validacoes);
+    }
+    system("cls");//limpa o ecrã
 }
 
+
+
 void menu_registo(void){
-    system("cls");
+    system("cls");//limpa o ecrã
     int option_registo;
     printf("====REGISTO MENSAL DE EXERCÍCIO FÍSICO====\n");
     printf("*--------------------------------------------------------------------------*\n");
@@ -64,10 +108,57 @@ void menu_registo(void){
     printf("*--------------------------------------------------------------------------*\n");
     printf("Selecione a opção desejada:");
     scanf("%d", &option_registo);
+    while(option_registo!=9){
+        switch(option_registo){
+            case 1:
+                printf("teste");//meter subprog aqui
+                break;
+            case 2:
+                printf("teste");//meter subprog aqui
+                break;
+            case 3:
+                printf("teste");//meter subprog aqui
+                break;
+            case 4:
+                printf("teste");//meter subprog aqui
+                break;
+            case 5:
+                printf("teste");//meter subprog aqui
+                break;
+            case 6:
+                printf("teste");//meter subprog aqui
+                break;
+            case 7:
+                printf("teste");//meter subprog aqui
+                break;
+            case 8:
+                printf("teste");//meter subprog aqui
+                break;
+            default:
+                system("cls");//limpa o ecrã
+                printf("Erro! Por favor, introduza uma opção válida...\n");
+                break;
+        }
+        printf("====REGISTO MENSAL DE EXERCÍCIO FÍSICO====\n");
+        printf("*--------------------------------------------------------------------------*\n");
+        printf("|1: Minutos gastos em exercício físico, num determinado dia                |\n");
+        printf("|2: Registo diário dos minutos gastos em exercício físico                  |\n");
+        printf("|3: Registo mensal                                                         |\n");
+        printf("|4: Média diária de exercício físico durante o mês registado               |\n");
+        printf("|5: Número de dias de um mês de maior tempo de exercício físico            |\n");
+        printf("|6: Dia de máximo tempo de exercício físico                                |\n");
+        printf("|7: Dias do mês, por ordem crescente, do registo mensal de exercício físico|\n");
+        printf("|8: Relatório mensal                                                       |\n");
+        printf("|9: Voltar ao menu anterior                                                |\n");
+        printf("*--------------------------------------------------------------------------*\n");
+        printf("Selecione a opção desejada:");
+        scanf("%d", &option_registo);
+    }
+    system("cls");//limpa o ecrã
 }
 
 void menu_sopa(void){
-    system("cls");
+    system("cls");//limpa o ecrã
     int option_sopa;
     printf("====SOPA DE LETRAS====\n");
     printf("*-----------------------------------------------------------------*\n");
@@ -79,10 +170,41 @@ void menu_sopa(void){
     printf("*-----------------------------------------------------------------*\n");
     printf("Selecione a opção desejada:");
     scanf("%d", &option_sopa);
+    while(option_sopa!=5){
+        switch(option_sopa){
+            case 1:
+                printf("teste");//meter subprog aqui
+                break;
+            case 2:
+                printf("teste");//meter subprog aqui
+                break;
+            case 3:
+                printf("teste");//meter subprog aqui
+                break;
+            case 4:
+                printf("teste");//meter subprog aqui
+                break;
+            default:
+                system("cls");//limpa o ecrã
+                printf("Erro! Por favor, introduza uma opção válida...\n");
+                break;
+        }
+        printf("====SOPA DE LETRAS====\n");
+        printf("*-----------------------------------------------------------------*\n");
+        printf("|1: Gerar tabela com letras aleatórias, com a dimensão desejada   |\n");
+        printf("|2: Imprimir tabela                                               |\n");
+        printf("|3: Inserir 4 palavras na sopa de letras e mostrar tabela completa|\n");
+        printf("|4: Gerar um número desejável de tabelas num ficheiro .txt        |\n");
+        printf("|5: Voltar ao menu principal                                      |\n");
+        printf("*-----------------------------------------------------------------*\n");
+        printf("Selecione a opção desejada:");
+        scanf("%d", &option_sopa);
+    }
+    system("cls");
 }
 
 void menu_clinico(void){
-    system("cls");
+    system("cls");//limpa o ecrã
     int option_clinico;
     printf("====REGISTO CLÍNICO====\n");
     printf("*------------------------------------------------------*\n");
@@ -94,20 +216,36 @@ void menu_clinico(void){
     printf("*------------------------------------------------------*\n");
     printf("Selecione a opção desejada:");
     scanf("%d", &option_clinico);
+    while(option_clinico!=5){
+        switch(option_clinico){
+            case 1:
+                printf("teste");//meter subprog aqui
+                break;
+            case 2:
+                printf("teste");//meter subprog aqui
+                break;
+            case 3:
+                printf("teste");//meter subprog aqui
+                break;
+            case 4:
+                printf("teste");//meter subprog aqui
+                break;
+            default:
+                system("cls");//limpa o ecrã
+                printf("Erro! Por favor, introduza uma opção válida...\n");
+                break;
+        }
+        printf("====REGISTO CLÍNICO====\n");
+        printf("*------------------------------------------------------*\n");
+        printf("|1: Inserir um novo utente                             |\n");
+        printf("|2: Procurar informação de um utente                   |\n");
+        printf("|3: Alterar informação de um utente                    |\n");
+        printf("|4: Listar utentes registados e apresentar número total|\n");
+        printf("|5: Voltar ao menu principal                           |\n");
+        printf("*------------------------------------------------------*\n");
+        printf("Selecione a opção desejada:");
+        scanf("%d", &option_clinico);
+    }
+    system("cls");
 }
 
-void menu_terminar(void){
-    system("cls");
-    int option_terminar;
-    printf("*----------------------------------------------------------*\n");
-    printf("|Deseja realmente terminar o programa?                     |\n");
-    printf("|Clique 1 para sair, clique 0 para voltar ao menu principal|\n");
-    printf("*----------------------------------------------------------*\n");
-    scanf("%d", &option_terminar);
-    if(option_terminar==0){
-        system("cls");
-        return menu_principal();
-    }
-    else
-        printf("Até breve!");
-}
