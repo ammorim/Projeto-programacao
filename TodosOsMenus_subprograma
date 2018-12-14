@@ -40,7 +40,10 @@ void menu_principal(void){
     printf("Selecione a opção desejada:");
     scanf("%d", &op);
 }
-
+    system("cls");
+    printf("*---------------*\n");
+    printf("====ATÉ BREVE====\n");
+    printf("*---------------*\n");
 }
 
 void menu_validacoes(void){
