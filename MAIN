@@ -6,11 +6,10 @@
 int main()
 {
     setlocale(LC_CTYPE, "Portuguese");
+    system("color f3"); //Cor do programa
     printf("*----------------------------------------------------------*\n");
     printf("====PROGRAMA DE APOIO À GESTÃO DE UMA CLÍNICA GERIÁTRICA====\n");
-    printf("*----------------------------------------------------------*");
-    puts("\n\n");
+    printf("*----------------------------------------------------------*\n");
     menu_principal();
-
     return 0;
 }
