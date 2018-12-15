@@ -2,6 +2,10 @@
 #include <stdlib.h>
 #include <locale.h>
 #include "TodosOsMenus_subprograma.h"
+#include "subprogramas_menu1.h"
+#include "subprogramas_menu2.h"
+#include "subprogramas_menu3.h"
+#include "subprogramas_menu4.h"
 
 int main()
 {
@@ -9,7 +13,10 @@ int main()
     system("color f3"); //Cor do programa
     printf("*----------------------------------------------------------*\n");
     printf("====PROGRAMA DE APOIO À GESTÃO DE UMA CLÍNICA GERIÁTRICA====\n");
+    printf("========PRIMA QUALQUER TECLA PARA INICIAR O PROGRAMA========\n");
     printf("*----------------------------------------------------------*\n");
+    getch();//premir qualquer tecla para continuar
+    system("cls");//limpa o ecrã
     menu_principal();
     return 0;
 }
